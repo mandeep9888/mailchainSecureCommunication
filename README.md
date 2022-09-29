@@ -31,9 +31,9 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
     - `generateKeys.js` generate 'rsa' keys and store them in `keys` folder
     - `generateKeyforAll.js` generates the keys for all the users.
     - `magic.js` does the encryption and decryption of the messages
-- `tests` - test folder
 -  `keys` - this folder stores keys for all users.
 -  `static` - contains all the static content.
+- `tests` - test folder
 -  `constant.js` - contains all the contants i.e. users, actions etc
 
 ## Tech and modules 💻
