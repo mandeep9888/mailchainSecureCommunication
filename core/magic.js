@@ -23,9 +23,3 @@ export function decrypt(toDecrypt, relativeOrAbsolutePathtoPrivateKey) {
   )
   return decrypted.toString('utf8')
 }
-
-// const enc = encrypt('hello', `public.pem`)
-// console.log('enc', enc)
-
-// const dec = decrypt(enc, `private.pem`)
-// console.log('dec', dec)
