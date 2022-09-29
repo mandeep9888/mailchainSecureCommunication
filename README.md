@@ -24,12 +24,14 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
 #### Folder structure is mentioned below
 
 
-![Project structure](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/keys.png?raw=true)
+![Project structure](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/project.png?raw=true)
 
 - `index.js` - main file for the cli tool
 - `core` - this folder contains two files as mentioned below
--- `generateKeys.js` generate 'rsa' keys and store them in `keys` folder
--- `magic.js` does the encryption and decryption of the messages
+    - `generateKeys.js` generate 'rsa' keys and store them in `keys` folder
+    - `generateKeyforAll.js` generates the keys for all the users.
+    - `magic.js` does the encryption and decryption of the messages
+- `tests` - test folder
 -  `keys` - this folder stores keys for all users.
 -  `static` - contains all the static content.
 -  `constant.js` - contains all the contants i.e. users, actions etc
@@ -43,6 +45,8 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
 - [chalkAnimation](https://www.npmjs.com/package/chalk-animation) - colorful animations in terminal output
 - [inquirer](https://www.npmjs.com/package/inquirer) - common interactive command line user interfaces
 - [nanospinner](https://www.npmjs.com/package/nanospinner) - the simplest and tiniest terminal spinner
+- [mocha](https://www.npmjs.com/package/mocha) - Simple, flexible, fun JavaScript test framework for Node.js
+- [chai](https://www.npmjs.com/package/chai) - Chai is a BDD / TDD assertion library for node 
 
 
 ## Installation ✈️
@@ -55,6 +59,11 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
 cd mailchainSecureCommunication
 npm i
 ```
+- To run all the tests
+```sh
+npm run test
+```
+
 - To start the cli tool 
 ```sh
 node .
