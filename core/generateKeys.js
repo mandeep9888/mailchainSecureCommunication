@@ -1,8 +1,10 @@
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { generateKeyPairSync } from 'crypto'
+import { folder } from "../constant.js";
 
 // generate private public keys of a user
-export function generateKeys(user) {
+export function generateKeys(user, dir) {
+  const keyfolder = dir  !== 'undefined' ?  dir  : folder;
   const { privateKey, publicKey } = generateKeyPairSync('rsa', {
     modulusLength: 4096,
     publicKeyEncoding: {
@@ -18,13 +20,12 @@ export function generateKeys(user) {
   })
 
   // create keys folder if does not exist
-  const folder = './keys';
-  if (!existsSync(folder)){
-    mkdirSync(folder);
+  if (!existsSync(keyfolder)){
+    mkdirSync(keyfolder);
 }
   // write user keys to the keys folder
-  writeFileSync(`${folder}/${user}_private.pem`, privateKey)
-  writeFileSync(`${folder}/${user}_public.pem`, publicKey)
+  writeFileSync(`${keyfolder}/${user}_private.pem`, privateKey)
+  writeFileSync(`${keyfolder}/${user}_public.pem`, publicKey)
 }
 
 

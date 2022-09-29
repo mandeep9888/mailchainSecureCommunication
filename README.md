@@ -21,7 +21,7 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
 - If decrypted successfully secret message will be shown on the screen.
 
 ## Project structure
->Folder structure is mentioned below
+#### Folder structure is mentioned below
 
 
 ![Project structure](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/keys.png?raw=true)
