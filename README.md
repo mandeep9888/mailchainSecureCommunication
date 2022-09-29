@@ -22,7 +22,8 @@ You can assume that Alice’s, Bob’s, and Eve’s public keys are stored or ca
 
 ## Project structure
 >Folder structure is mentioned below
-<br/>
+
+
 ![Project structure](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/keys.png?raw=true)
 
 - `index.js` - main file for the cli tool
@@ -61,29 +62,35 @@ node .
 ## Flow 🛶
 
 1. >Once the `node .` command is trigger for the very first time tools will generate public-private keys of all the users in `keys` folder
-<br />
+
+
 ![generate keys in folder](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/genrateKeys.png?raw=true)
 
 2. >You can view the keys in the `keys` folder generated.
-<br />
+
+
 ![Project structure](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/keys.png?raw=true)
 
 
 3. >Once you have the keys generated tool will ask you to choose an user from the given list, what type of action you want to perform and whom do you want to send the message. It will encrypt the message using recipient public key so that only recipient can decqrypt the message.
-<br />
+
+
 ![welcome screen](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/welcome.png?raw=true)
 
 
 4. >Once you have added your secret message tool will given you option for select who you are and what action you want to perform.
-<br />
+
+
 ![Encrypted message](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/encryptMsg.png?raw=true)
 
 5. >If you are not the intended user tool will check and gives you an error. As reciepient private keys is used to decrypt the message and if you are not the intended user you wont be able to decrypt the secret message.
-<br />
+
+
 ![Not intended User](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/tryAgain.png?raw=true)
 
 6. >If you are the intended user secret message will be decrypted using your private keys and will be shown on the screen.
-<br/>
+
+
 ![Success](https://github.com/mandeep9888/mailchainSecureCommunication/blob/main/static/success.png?raw=true)
 
 
