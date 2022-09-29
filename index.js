@@ -151,7 +151,7 @@ async function decryptSecret(secretMsg) {
     } catch (error) {
         spinner.stop();
         const txt = `${chalk.red(
-            '\n 💀💀💀 You are not the recipient of this messege \n'
+            '\n 💀💀💀 You are not the intended recipient of this messege \n'
             )}`
         spinner.error({ text : txt });
         log(`${chalk.yellow('TRY AGAIN 🔂!!\n')}`);
