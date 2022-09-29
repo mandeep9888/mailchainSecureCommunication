@@ -143,6 +143,10 @@ async function decryptSecret(secretMsg) {
     const spinner = createSpinner('Decrypting msg.....⌛\n \n ').start();
     await pause();
     try {
+        if(user != msgReciever)
+        {
+            throw new Error('unintended recipient !!');
+        }
         const dec = decrypt(secretMsg, `${folder}/${user}_private.pem`);
         const txt = `${chalk.greenBright(dec)}`
         spinner.stop();
@@ -151,7 +155,7 @@ async function decryptSecret(secretMsg) {
     } catch (error) {
         spinner.stop();
         const txt = `${chalk.red(
-            '\n 💀💀💀 You are not the intended recipient of this messege \n'
+            '\n 💀 💀 💀 You are not the intended recipient of this messege \n'
             )}`
         spinner.error({ text : txt });
         log(`${chalk.yellow('TRY AGAIN 🔂!!\n')}`);
