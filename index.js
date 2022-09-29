@@ -6,19 +6,12 @@ import inquirer from "inquirer";
 import { createSpinner } from "nanospinner";
 import {existsSync} from 'fs';
 
-// import { generateKeys } from './core/generateKeys.js'
 import { encrypt, decrypt } from "./core/magic.js";
 import { generatedKeysForAllUsers } from "./core/generateKeysforAll.js";
 import {usersList, actionsList, folder } from "./constant.js";
 const users = usersList;
 const actions = actionsList;
 
-// //generate keys for all the users specify in the constant.js file.
-// function generatedKeysForAllUsers(folder) {
-//     users.forEach(element => {
-//         generateKeys(element, folder);
-//     });
-// }
 
 const log = console.log;
 let user;
