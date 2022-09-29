@@ -13,7 +13,7 @@ const users = usersList;
 
 const actions = actionsList;
 
-// call this function to generate keys for all the users specify in the constant.js file.
+//generate keys for all the users specify in the constant.js file.
 function generatedKeysForAllUsers() {
     users.forEach(element => {
         generateKeys(element);
@@ -162,5 +162,3 @@ async function decryptSecret(secretMsg) {
 
 
 await welcome();
-
-// await askAction();
