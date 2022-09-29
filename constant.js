@@ -1,3 +1,4 @@
+// add more users here is required
 export const usersList = [
     'Alice',
     'Bob',
